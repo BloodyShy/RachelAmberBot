@@ -16,7 +16,7 @@ client.on('message', message => {
  */
 class Presence {
   constructor(data = {}) {
-    /**
+    /**`online`**
      * The status of the presence:
      *
      * * **`online`** - user is online
@@ -58,7 +58,7 @@ class Presence {
  */
 class Game {
   constructor(data) {
-    /**
+    /**Яшик**
      * The name of the game being played
      * @type {string}
      */
