@@ -1,11 +1,8 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const Presence = new Game();
 /**
  * Represents a user's presence.
  */
 class Presence {
-  constructor(data = {online}) {
+  constructor(data = {}) {
     /**
      * The status of the presence:
      *
