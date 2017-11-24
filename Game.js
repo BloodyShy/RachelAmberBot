@@ -1,8 +1,11 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const Presence = 
 /**
  * Represents a user's presence.
  */
 class Presence {
-  constructor(data = {}) {
+  constructor(data = {online}) {
     /**
      * The status of the presence:
      *
@@ -38,7 +41,7 @@ class Presence {
       this.game ? this.game.equals(presence.game) : !presence.game
     );
   }
-}
+};
 
 /**
  * Represents a game that is part of a user's presence.
