@@ -6,10 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'salo') {
+    	message.reply('@Marble Sketch Тебя вызывают');
   	}
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.MzgzMzQ1NzAyOTk2Mjc5Mjk5.DPlhrQ.LajMiCjjNP-GC7Hg89B8od04Ilc);
+client.login(process.env.TOKEN);
