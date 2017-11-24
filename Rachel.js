@@ -11,10 +11,14 @@ client.on('message', message => {
   	}
 });
 
+// Obtained using:
+voiceChannel.join()
+  .then(connection => {
   get connection() {
     const connection = this.guild.voiceConnection;
     if (connection && connection.channel.id === this.id) return connection;
     return null;
+  }
   });
 
 // THIS  MUST  BE  THIS  WAY
